@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-13T05:54:27.202198" rpa="false" schemaversion="5">
-<suite id="s1" name="Search Google" source="c:\Source\Robot_Framework_Python\src\01_easy_selenium_example\search_google.robot">
-<test id="s1-t1" name="Open Google.com and check the url" line="7">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-24T06:34:38.990695" rpa="false" schemaversion="5">
+<suite id="s1" name="Basics" source="c:\Source\Robot_Framework_Python\src\02_basics\basics.robot">
+<test id="s1-t1" name="Using Keywords with Arguments" line="40">
+<kw name="Start Browser">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-13T05:54:27.391088" level="INFO">Opening browser 'edge' to base url 'https://www.google.com'.</msg>
-<arg>url=https://www.google.com</arg>
-<arg>browser=edge</arg>
+<msg time="2024-03-24T06:34:39.184719" level="INFO">Opening browser 'edge' to base url 'https://www.google.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-13T05:54:27.391088" elapsed="2.632603"/>
+<status status="PASS" start="2024-03-24T06:34:39.184719" elapsed="4.571356"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-13T05:54:30.025580" level="INFO">Typing text 'something' into text field 'xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea'.</msg>
-<arg>xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea</arg>
-<arg>something</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-13T05:54:30.025580" elapsed="0.139450"/>
+<arg>${WEBSITE}</arg>
+<arg>edge</arg>
+<status status="PASS" start="2024-03-24T06:34:39.184719" elapsed="4.576559"/>
 </kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-03-13T05:54:30.167094" level="INFO">Sending key(s) ('RETURN',) to xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea element.</msg>
-<msg time="2024-03-13T05:54:30.568117" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2024-03-13T05:54:30.569188" level="INFO">Releasing special key RETURN.</msg>
-<arg>xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-03-13T05:54:30.166271" elapsed="1.130192"/>
-</kw>
+<kw name="Stop Browser">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-13T05:54:31.296463" elapsed="3.232791"/>
+<status status="PASS" start="2024-03-24T06:34:43.762457" elapsed="2.211433"/>
 </kw>
-<status status="PASS" start="2024-03-13T05:54:27.391088" elapsed="7.140223"/>
+<status status="PASS" start="2024-03-24T06:34:43.761278" elapsed="2.214269"/>
+</kw>
+<status status="PASS" start="2024-03-24T06:34:39.184719" elapsed="6.790828"/>
 </test>
-<doc>I want to open the google url and search for "something"</doc>
-<status status="PASS" start="2024-03-13T05:54:27.205552" elapsed="7.328389"/>
+<doc>In this program I will cover most basic functions robot framework
+you can write multi line with the three ...
+This will work for all data sections</doc>
+<status status="PASS" start="2024-03-24T06:34:38.995182" elapsed="6.980365"/>
 </suite>
 <statistics>
 <total>
@@ -41,7 +35,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Search Google">Search Google</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basics">Basics</stat>
 </suite>
 </statistics>
 <errors>

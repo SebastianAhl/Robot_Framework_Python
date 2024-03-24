@@ -5,6 +5,9 @@ This project was created for educational purposes. It is freely accessible to ev
 - [Selenium](http://www.apache.org/licenses/LICENSE-2.0), [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - [Robot Framework](python -m pip install testobject), [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
+# Important Links
+(UserGuide of Robot Framework)[https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html]
+
 # Description
 This project is intended to provide an easy introduction to programming with [Robot Framework](https://robotframework.org/) using Python.
 
@@ -65,7 +68,7 @@ Download the browsers and install them with standard settings. Firefox you can i
 8. With "File --> Open Folder" you can open the folder where you downloaded the repository from github.
 
 # Hints
-<!-- ## Finding XPath easy
+## Finding XPath easy
 An easy way to find and copy XPATH of web elements with Edge browser
 1. Open the website
 2. Press F12 to open "Inspect"
@@ -73,7 +76,7 @@ An easy way to find and copy XPATH of web elements with Edge browser
 4. Now you can select an element on the website by clicking on it.
 5. The element will be highlighted in the "Inspect" as code
 6. Right-click the highlighted code "Copy --> Copy full Xpath"
-7. Enjoy your expath -->
+7. Enjoy your expath
 
 # Folder Structure and File Description
 Folder contained in the workspace:
