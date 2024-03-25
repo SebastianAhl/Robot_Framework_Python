@@ -1,32 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-24T06:34:38.990695" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-25T06:05:44.242365" rpa="false" schemaversion="5">
 <suite id="s1" name="Basics" source="c:\Source\Robot_Framework_Python\src\02_basics\basics.robot">
-<test id="s1-t1" name="Using Keywords with Arguments" line="40">
-<kw name="Start Browser">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-24T06:34:39.184719" level="INFO">Opening browser 'edge' to base url 'https://www.google.com'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-24T06:34:39.184719" elapsed="4.571356"/>
+<test id="s1-t1" name="Using Variables" line="44">
+<kw name="Should Not Be Equal As Strings" owner="BuiltIn">
+<arg>${VAR1}</arg>
+<arg>${VAR2}</arg>
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<status status="PASS" start="2024-03-25T06:05:44.447772" elapsed="0.000000"/>
 </kw>
-<arg>${WEBSITE}</arg>
-<arg>edge</arg>
-<status status="PASS" start="2024-03-24T06:34:39.184719" elapsed="4.576559"/>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-03-25T06:05:44.447772" level="INFO">${x} = Person1</msg>
+<var>${x}</var>
+<arg>${LISTPERSONS}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-03-25T06:05:44.447772" elapsed="0.000000"/>
 </kw>
-<kw name="Stop Browser">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-24T06:34:43.762457" elapsed="2.211433"/>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T06:05:44.447772" level="INFO">
+ 
+ Output List 1 
+ 
+ Person1</msg>
+<arg>\n \n Output List 1 \n \n ${x}</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T06:05:44.447772" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-03-24T06:34:43.761278" elapsed="2.214269"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n \n Output List 2 \n \n ${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-25T06:05:44.461605" elapsed="0.002048"/>
 </kw>
-<status status="PASS" start="2024-03-24T06:34:39.184719" elapsed="6.790828"/>
+<kw name="List Should Contain Value" owner="Collections">
+<msg time="2024-03-25T06:05:44.469673" level="INFO">False</msg>
+<arg>${LISTPERSONS}</arg>
+<arg>Person1</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2024-03-25T06:05:44.466713" elapsed="0.003968"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-25T06:05:44.475052" level="INFO">${x} = John</msg>
+<var>${x}</var>
+<arg>${DICUSER1}</arg>
+<arg>firstname</arg>
+<arg>default</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-25T06:05:44.474809" elapsed="0.000243"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n \n Output Dictionary \n \n ${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-25T06:05:44.475052" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-25T06:05:44.447772" elapsed="0.027280"/>
 </test>
 <doc>In this program I will cover most basic functions robot framework
 you can write multi line with the three ...
 This will work for all data sections</doc>
-<status status="PASS" start="2024-03-24T06:34:38.995182" elapsed="6.980365"/>
+<status status="PASS" start="2024-03-25T06:05:44.243156" elapsed="0.242822"/>
 </suite>
 <statistics>
 <total>
